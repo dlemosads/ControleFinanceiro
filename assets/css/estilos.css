@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+:root {
+    --negrito: 700;
+}
+
 body {
-    background-color: #1D232A;
+    background-color: #D5DDDC;
     font-family: 'Montserrat', 'Material Icons', sans-serif;
     color: #FFFFFF;
+    width: 375px;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.texto-negrito {
+    font-weight: var(--negrito);
 }
 
 .cabecalho {
@@ -31,6 +45,8 @@ body {
     position: absolute;
     left: -100vw;
     transition: .25s;
+
+    z-index: 1;
 }
 
 .menu-lateral--ativo {
@@ -87,11 +103,49 @@ body {
 }
 
 .principal__banner {
-    
-    width: 100vh;
-    background-color: #95999C;
-    background-image: url(../img/);
-    background-repeat: no-repeat;
-    
-    
+    height: 246px;
+    background-color: #5F78FA;
+    border-radius: 0px 0px 50px 50px;
 }
+
+.principal__resultado {
+    width: 300px;
+    height: 80px;
+    background-color: #54D6De;
+    border-radius: 10px;
+    position: absolute;
+    left: 37px;
+    top: 271px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.principal__resultado>div>p{
+    text-align: center;
+    color: black;
+}
+
+.principal__botao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.principal__botao-uni {
+    width: 135px;
+    height: 140px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.16);
+    margin-bottom: 16px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
